@@ -1,6 +1,6 @@
 <%- | Hash $config,
 | -%>
 
-<% $config.each |$key, $value| { %>
+<% $config.each |$key, $value| { -%>
 <%= $key %>=<%= $value %>
-<% } %>
+<% } -%>
