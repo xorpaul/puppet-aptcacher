@@ -1,0 +1,13 @@
+<%- | Boolean $autostart,
+      Array   $extraopt,
+      Integer $daemon_port,
+| -%>
+
+# Set to 1 to run apt-cacher as a standalone daemon, set to 0 if you are going
+# to run apt-cacher from /etc/inetd or in CGI mode (deprecated).  Alternatively,
+# invoking "dpkg-reconfigure apt-cacher" should do the work for you.
+#
+AUTOSTART=<%= $autostart %>
+
+# extra settings to override the ones in apt-cacher.conf
+EXTRAOPT=" daemon_port=<%= $daemon_port %> <%= $extraopt.join(' ') %> "

@@ -1,0 +1,14 @@
+{
+  "name": "zeromind-aptcacher",
+  "version": "0.0.1",
+  "author": "zeromind",
+  "summary": "Simple module to install and configure apt-cacher as daemon",
+  "license": "Apache 2.0",
+  "source": "https://github.com/zeromind/puppet-aptcacher",
+  "project_page": "https://github.com/zeromind/puppet-aptcacher",
+  "issues_url": "https://github.com/zeromind/puppet-aptcacher/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
