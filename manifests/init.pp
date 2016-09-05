@@ -81,7 +81,7 @@ class aptcacher(
     mode    => '0644',
     owner   => 0,
     group   => 0,
-    content => epp('aptcacher/default.apt-cacher.epp',
+    content => epp('aptcacher/apt-cacher.conf.epp',
       {
         'config' => $config,
       }
