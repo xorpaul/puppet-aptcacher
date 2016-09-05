@@ -2,5 +2,5 @@
 | -%>
 
 <% $config.each |$key, $value| { %>
-<%= $key %>=<% $value %>
+<%= $key %>=<%= $value %>
 <% } %>
